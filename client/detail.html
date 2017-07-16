@@ -1,0 +1,16 @@
+<template name="detail">
+    <div class="container">
+        {{#with data}}
+        <div class="panel panel-default">
+            <div class="panel-heading">{{제목}}</div>
+<!--            {{}} : 데이터에서 전달받은 내용. 키값 적어주기-->
+            <div class="panel-body">
+                {{내용}}
+            </div>
+        </div>
+        {{/with}}
+<!--        with : data의 내용을 쓰고 싶을 때-->
+<!--        each : 반복구문-->
+        <button class="pull-right btn btn-default"><a href="/question">뒤로</a></button>
+    </div>
+</template>
